@@ -17,18 +17,18 @@ const Hero = () => {
                 </div>
 
                 <h1 className="hero-title">
-                    The Ultimate <br />
-                    <span className="text-gradient">Productivity Companion</span>
+                    Stop Writing Boilerplate. <br />
+                    <span className="text-gradient">Start Building Apps.</span>
                 </h1>
 
                 <p className="hero-desc">
-                    Flutter Mate combines powerful scaffolding, intelligent code generation, and workflow automation into a single VS Code extension.
+                    The ultimate productivity companion for Flutter developers. Instant scaffolding, smart assets, and intelligent automation in one powerful extension.
                 </p>
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     <a href="https://marketplace.visualstudio.com/items?itemName=MunasirPv.flutter-mate" target="_blank" rel="noreferrer" className="btn btn-primary group">
                         <Download size={20} />
-                        Install Extension
+                        Install for VS Code
                         <ArrowRight size={16} className="opacity-0 -ml-2 group-hover:ml-0 group-hover:opacity-100 transition-all" />
                     </a>
                     <a href="https://github.com/MunasirPv/Flutter-Mate" target="_blank" rel="noreferrer" className="btn btn-secondary">
