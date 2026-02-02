@@ -5,6 +5,7 @@ import './index.css';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import JsonToDart from './pages/JsonToDart';
+import JsonFormatter from './pages/JsonFormatter';
 import logo from './assets/logo.png';
 
 function App() {
@@ -35,8 +36,9 @@ function App() {
 
               {/* Desktop Nav */}
               <nav className="md:flex gap-8 nav-links hidden" style={{ fontSize: '0.875rem', fontWeight: 500 }}>
-                <a href="/#features" className="nav-link">Features</a>
                 <Link to="/json-to-dart" className="nav-link">JSON to Dart</Link>
+                <Link to="/json-formatter" className="nav-link">JSON Formatter</Link>
+                <a href="/#features" className="nav-link">Features</a>
                 <a href="/#docs" className="nav-link">Documentation</a>
                 <a href="https://github.com/MunasirPv/Flutter-Mate" target="_blank" rel="noreferrer" className="nav-link">GitHub</a>
               </nav>
@@ -45,8 +47,9 @@ function App() {
             {/* Mobile Nav Dropdown */}
             {isMobileMenuOpen && (
               <div className="md:hidden glass-panel border-t border-white/5 absolute top-full left-0 w-full p-4 flex flex-col gap-4">
-                <a href="/#features" className="nav-link block" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
                 <Link to="/json-to-dart" className="nav-link block" onClick={() => setIsMobileMenuOpen(false)}>JSON to Dart</Link>
+                <Link to="/json-formatter" className="nav-link block" onClick={() => setIsMobileMenuOpen(false)}>JSON Formatter</Link>
+                <a href="/#features" className="nav-link block" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
                 <a href="/#docs" className="nav-link block" onClick={() => setIsMobileMenuOpen(false)}>Documentation</a>
                 <a href="https://github.com/MunasirPv/Flutter-Mate" target="_blank" rel="noreferrer" className="nav-link block">GitHub</a>
               </div>
@@ -57,6 +60,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/json-to-dart" element={<JsonToDart />} />
+              <Route path="/json-formatter" element={<JsonFormatter />} />
             </Routes>
           </main>
 
